@@ -48,7 +48,6 @@ grails.project.dependency.resolution = {
 
 	dependencies {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-		compile 'com.google.api.client:google-api-data-contacts-v3:1.0.10-alpha'
 		runtime 'mysql:mysql-connector-java:5.1.29'
 		// runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
 		test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
@@ -59,9 +58,19 @@ grails.project.dependency.resolution = {
 		build ":tomcat:7.0.54"
 
 		// plugins for the compile step
+		compile ":hibernate:3.6.10.17"
 		compile ":scaffolding:2.1.2"
 		compile ':cache:1.1.7'
 		compile ":asset-pipeline:1.8.11"
+		compile ":address:0.2"
+		compile ":mail:1.0.7"
+		compile ":quartz:1.0.2"
+		compile ":localizations:1.4.4.14"
+		compile ":joda-time:1.5"
+		compile ":geb:0.9.3"
+		compile ":constraints:0.8.0"
+		
+		test ":code-coverage:2.0.3-2"
 
 		// plugins needed at runtime but not for compilation
 		runtime ":hibernate4:4.3.5.4" // or ":hibernate:3.6.10.16"
